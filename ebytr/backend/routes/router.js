@@ -9,4 +9,6 @@ router.post("/add", UserController.create);
 
 router.put("/update", UserController.update);
 
+router.delete("/delete", UserController.deleteUser);
+
 module.exports = router;
