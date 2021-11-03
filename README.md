@@ -11,7 +11,7 @@
 
 # Sobre
 
-Este projeto tem o objetivo de simular um desafio técnico. Um desafio proposto pela escola Trybe para que os alunos se preparem paras os 
+Este projeto tem o objetivo de simular um desafio técnico. Um desafio proposto pela escola Trybe para que os alunos se preparem para os 
 desafios técnicos no mercado de trabalho
 
 # Desafio
