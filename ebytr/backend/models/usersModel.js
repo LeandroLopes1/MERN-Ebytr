@@ -13,7 +13,7 @@ const create = async (data) => {
 
 const update = async (data) => {
   const db = await connection()
-  return db.collection('to-do').updateOne({ _id: ObjectId(data.id) }, { $set: data });
+  return db.collection('to-do').updateOne({ _id: ObjectId(data._id) }, { $set: data });
 };
 
 const deleteOne = async (data) => {

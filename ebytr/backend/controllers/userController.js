@@ -1,4 +1,5 @@
 const Task = require('../models/usersModel');
+const { ObjectId } = require('mongodb');
 
 const getAll = async (req, res) => {
   try {
@@ -21,6 +22,9 @@ const create = async (req, res) => {
 };
 
 const update = async (req, res) => {
+  if ("_id" in req.body) {
+    req.body._id =  ObjectId(req.body._id);
+  }
   try {
     const task = await Task.update(req.body);
     res.status(200).json(task);
@@ -45,4 +49,4 @@ module.exports = {
     create,
     update,
     deleteUser,
-}; 
+};
