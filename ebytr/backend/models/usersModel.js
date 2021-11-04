@@ -1,9 +1,11 @@
 const { ObjectId } = require('mongodb');
 const connection = require('../models/connection');
 
+const order = { text: 1 };
+
 const getAll = async () => {
   const db = await connection()
-  return db.collection('to-do').find().toArray();
+  return db.collection('to-do').find().sort(order).toArray();
 };
 
 const create = async (data) => {
