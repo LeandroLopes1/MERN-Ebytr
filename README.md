@@ -11,12 +11,12 @@
 
 # Sobre
 
-Este projeto tem o objetivo de simular um desafio técnico. Um desafio proposto pela escola Trybe para que os alunos se preparem para os 
+Este projeto tem o objetivo de simular um desafio técnico proposto pela escola Trybe para que os alunos se preparem para os 
 desafios técnicos no mercado de trabalho
 
 # Desafio
 
-Uma empresa ficticia convocou os estudantes para fazer um projeto para seus colaboradores. Nesse projeto será desenvolvido um to-do list utilizando a Stack MERN.
+Uma empresa fictícia convocou os estudantes para fazer um projeto para seus colaboradores. Nesse projeto será desenvolvido um to-do list utilizando a Stack MERN.
 
 # Requisitos
 
@@ -38,7 +38,7 @@ cd Ebytr/backend
 npm install
 npm run dev
 ```
-Conect o client:
+Conecte o client:
 ```
 cd Ebytr/frontend
 npm install
