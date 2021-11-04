@@ -24,4 +24,36 @@ Front-End em React;
 Back-End em NodeJS, com MongoDB;
 Arquitetura em camadas;
 
+testes com mocha, chai e sinon.
+
 # Instalação
+
+No terminal conecte o mongoDB
+```
+sudo service mongod start 
+```
+Conecte o server:
+```
+cd Ebytr/backend
+npm install
+npm run dev
+```
+Conect o client:
+```
+cd Ebytr/frontend
+npm install
+npm start
+```
+Execução testes
+```
+cd Ebytr/backend
+npm run test
+```
+```
+cd Ebytr/frontend
+npm run test
+```
+
+
+
+
