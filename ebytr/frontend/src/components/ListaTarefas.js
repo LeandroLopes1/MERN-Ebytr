@@ -6,7 +6,7 @@ function ListaTarefas() {
   const [tasks, setTasks] = useState([]);
   const [filterTasks, setFilterTasks] = useState({ filter: false, active: true});
 
-function getTask() {
+ function getTask() {
   fetch("http://localhost:5000/list", 
   { method: "GET" })
     .then(response => response.json())
@@ -20,7 +20,6 @@ function addTask() {
   .then(response => response.json())
   .then(() => getTask());
 };
-
 
 function updateTask(item) {
   fetch("http://localhost:5000/update", 
@@ -36,18 +35,18 @@ function deleteTask(item) {
   body: JSON.stringify(item) })
   .then(response => response.json())
   .then(() => getTask());
-};
+}; 
 
 useEffect(() => {
   getTask();
 }, []);
 
-const itensToShow = filterTasks.filter ? tasks.filter(item => item.active === filterTasks.active) : tasks;
+const changeTaskStatus = filterTasks.filter ? tasks.filter(item => item.active === filterTasks.active) : tasks;
 
   return (
     <div className={"container"}>
       <div>
-     {itensToShow.map(item => {
+     {changeTaskStatus.map(item => {
        return <Tarefa key={item._id} item={item} updateTask={ updateTask } deleteTask={ deleteTask }/>
       })}
     <div className={"btn"}>
