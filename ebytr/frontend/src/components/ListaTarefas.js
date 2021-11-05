@@ -5,7 +5,7 @@ function ListaTarefas() {
 
   const [tasks, setTasks] = useState([]);
   const [filterTasks, setFilterTasks] = useState({ filter: false, active: true});
-
+ 
  function getTask() {
   fetch("http://localhost:5000/list", 
   { method: "GET" })
