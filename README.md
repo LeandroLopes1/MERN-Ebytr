@@ -5,7 +5,7 @@
 - [Sobre o desafio](#sobre)
 - [O desafio](#desafio)
 - [Requisitos técnicos](#requisitos)
-- [Comamdos para instalar na sua maquina](#instalação)
+- [Comandos para instalar na sua maquina](#instalação)
 - [Comandos para funcionar o projeto](#funcionamneto)
 
 
